@@ -1,0 +1,16 @@
+[user]
+	name = Deniz Eren
+	email = dee.116@gmail.com
+
+[alias]
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  st = status -sb
+  ds = diff --staged
+  unstage = reset HEAD --
+
+[core]
+  pager = less
+  editor = vim
+
+[color]
+  ui = true
