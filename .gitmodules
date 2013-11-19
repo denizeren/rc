@@ -10,12 +10,9 @@
 [submodule ".vim/bundle/tagbar"]
 	path = .vim/bundle/tagbar
 	url = git://github.com/majutsushi/tagbar.git
-[submodule ".vim/bundle/snipmate.vim/snippets"]
-	path = .vim/bundle/snipmate.vim/snippets
-	url = git://github.com/scrooloose/snipmate-snippets.git
 [submodule ".vim/bundle/snipmate.vim"]
 	path = .vim/bundle/snipmate.vim
 	url = git://github.com/msanders/snipmate.vim.git
-[submodule ".vim/snippets"]
-	path = .vim/snippets
+[submodule ".vim/snipmate-snippets"]
+	path = .vim/snipmate-snippets
 	url = git://github.com/scrooloose/snipmate-snippets.git
