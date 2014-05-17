@@ -16,3 +16,9 @@
 [submodule ".vim/snipmate-snippets"]
 	path = .vim/snipmate-snippets
 	url = git://github.com/scrooloose/snipmate-snippets.git
+[submodule ".vim/bundle/vim-scala"]
+	path = .vim/bundle/vim-scala
+	url = https://github.com/derekwyatt/vim-scala
+[submodule ".vim/bundle/vimerl"]
+	path = .vim/bundle/vimerl
+	url = https://github.com/jimenezrick/vimerl.git
