@@ -11,10 +11,6 @@ set hidden              " hide buffers
 
 let g:NERDTreeDirArrows = 0 " character problems fixed in nerdtree
 
-autocmd VimEnter * NERDTree
-autocmd VimEnter * wincmd p
-autocmd VimEnter * Tagbar
-
 " Quit NERDTree if it is last buffer
 function! NERDTreeQuit()
   redir => buffersoutput
@@ -38,4 +34,11 @@ function! NERDTreeQuit()
     quitall
   endif
 endfunction
-autocmd WinEnter * call NERDTreeQuit()
+
+" If window is not wide enough do not start NERDTree and Tagbar
+if (winwidth(0) > 160)
+    autocmd VimEnter * NERDTree
+    autocmd VimEnter * wincmd p
+    autocmd VimEnter * Tagbar
+    autocmd WinEnter * call NERDTreeQuit()
+endif
