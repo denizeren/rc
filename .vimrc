@@ -9,6 +9,8 @@ set shiftwidth=4        " number of spaces to use for auto indent
 set autoindent          " copy indent from current line when starting a new line
 set hidden              " hide buffers
 
+let g:NERDTreeDirArrows = 0 " character problems fixed in nerdtree
+
 autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
 autocmd VimEnter * Tagbar
