@@ -10,6 +10,7 @@ set autoindent          " copy indent from current line when starting a new line
 set hidden              " hide buffers
 
 let g:NERDTreeDirArrows = 0 " character problems fixed in nerdtree
+let g:go_disable_autoinstall = 1
 
 " Quit NERDTree if it is last buffer
 function! NERDTreeQuit()
