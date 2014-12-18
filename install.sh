@@ -16,6 +16,7 @@ git clone https://github.com/honza/vim-snippets.git
 git clone https://github.com/scrooloose/syntastic.git
 git clone https://github.com/majutsushi/tagbar.git
 git clone https://github.com/fatih/vim-go.git
+git clone git://github.com/tpope/vim-fugitive.git
 
 rm ~/.gitconfig ~/.tmux.conf ~/.vimrc ~/.zshrc
 
