@@ -9,6 +9,7 @@ set softtabstop=4
 set shiftwidth=4        " number of spaces to use for auto indent
 set autoindent          " copy indent from current line when starting a new line
 set hidden              " hide buffers
+set clipboard=unnamedplus
 
 let g:NERDTreeDirArrows = 0 " character problems fixed in nerdtree
 let g:go_disable_autoinstall = 1
