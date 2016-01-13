@@ -7,6 +7,8 @@
   st = status -sb
   ds = diff --staged
   unstage = reset HEAD --
+  co = checkout
+  mg = merge --edit --no-ff --no-commit
 
 [core]
   pager = less
