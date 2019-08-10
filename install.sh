@@ -2,22 +2,16 @@
 
 cd $HOME
 
-curl -L http://install.ohmyz.sh | sh
-
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
-curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim +PluginInstall +qall
 
-cd ~/.vim/bundle
-git clone https://github.com/fatih/vim-go.git
-git clone git://github.com/tpope/vim-fugitive.git
-git clone https://github.com/Valloric/YouCompleteMe
-cd YouCompleteMe
-git submodule update --init --recursive
-python3 install.py --clang-completer --go-completer --ts-completer
+cd ~/.vim/bundle/youcompleteme
+YCM_CORES=1 python3 install.py --clang-completer --go-completer --ts-completer
+cd $HOME
 
 rm ~/.gitconfig ~/.tmux.conf ~/.vimrc ~/.zshrc
 
 ln -s ~/rc/.gitconfig ~/.gitconfig
 ln -s ~/rc/.tmux.conf ~/.tmux.conf
 ln -s ~/rc/.vimrc ~/.vimrc
-ln -s ~/rc/.zshrc ~/.zshrc
