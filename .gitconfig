@@ -1,6 +1,6 @@
 [user]
-  name = Deniz Eren
   email = dee.116@gmail.com
+  name = Deniz Eren
 
 [alias]
   lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
